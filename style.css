@@ -16,6 +16,17 @@ body {
   --text-decoration-color: #ff9a00;
 }
 
+.main__homer {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}
+
+.main__homer img {
+  display: block;
+  width: 100%;
+}
+
 .container {
   margin: 0 auto;
   padding: 0 30px;
@@ -47,6 +58,36 @@ body {
   padding-bottom: 30px;
   margin-bottom: 15px;
 }
+@media screen and (max-width: 1600px) {
+  .main__homer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 200px;
+  }
+  .additional-info {
+    position: relative;
+  }
+}
+@media screen and (max-width: 950px) {
+  .main__homer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 179px;
+  }
+  .additional-info {
+    position: relative;
+  }
+  .additional-info__education-university:nth-child(3)
+    .additional-info__education-university-name,
+  .additional-info__education-university:nth-child(4)
+    .additional-info__education-university-speciality,
+  .additional-info__education-university:nth-child(4)
+    .additional-info__education-university-name {
+    max-width: 70%;
+  }
+}
 
 @media screen and (max-width: 576px) {
   .main-info,
@@ -64,6 +105,9 @@ body {
 
   .experiences {
     margin-right: 0;
+  }
+  .main__homer {
+    width: 150px;
   }
 }
 .contact-info__header,
